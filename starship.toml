@@ -1,0 +1,33 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Define prompt
+format = """ 
+(bold purple)$hostname$directory
+[└─>](bold green) $username"""
+
+# Inserts a blank line between shell prompts
+add_newline = false 
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+#Hostname module
+[hostname]
+ssh_only = false
+format = '[$ssh_symbol](bold purple)[$hostname](bold blue ) '
+
+disabled = false
+
+#Username module
+[username]
+style_user = 'purple bold'
+style_root = 'white bold'
+format = '[$user]($style) '
+disabled = false
+show_always = true
