@@ -1,6 +1,9 @@
 #!/bin/bash
+# File created partially using chatgpt, mostly just for the progress bar implementation,
+# the rest of it is entirely of my own creation. Use it at your own risk, i do not take
+# responsibility on any damage ocassionated to your computer by executing this script.
 
-echo "This is a script to automate the deployment of these dotfiles"
+echo "This is a script to automate the deployment of my dotfiles"
 echo "============================================================="
 echo "a) Starship"
 
@@ -23,8 +26,6 @@ print_progress() {
 step() {
     local step_name=$1
     echo "Executing $step_name..."
-    sleep 1  # Simulate work being done
-    # You can replace this sleep with your actual command
 }
 
 # Initialize progress
@@ -34,16 +35,18 @@ progress=0
 if [ "$install" == "a" ]; then
     echo "Installing starship..."
     step "download" && ((progress++))
-    print_progress "$((progress * 50))" && printf "\n" # Print progress after first step
+    #print_progress "$((progress * 50))" && printf "\n" # Print progress after first step
     sleep 1
     #curl -sS https://starship.rs/install.sh | sh -y
-    #echo eval "$(starship init bash)" > ~/.bashrc
+    #echo eval "$(starship init bash)" > ~/.bashrc 
+    print_progress "$((progress * 50))" && printf "\n" # Print progress after first step
     step "configuration" && ((progress++))
-    print_progress "$((progress * 50))"&& printf "\n" # Print progress after second step
+    #print_progress "$((progress * 50))"&& printf "\n" # Print progress after second step
     sleep 1
     echo 'eval "$(starship init bash)"' > ./test
-    echo ' Starship installation complete!'
-    progress=2
+    print_progress "$((progress * 50))"&& printf "\n" # Print progress after second step
+    echo 'Starship installation complete!'    
+    #progress=2
 
     total_steps=2  # Total number of steps in the conditional block
 else
@@ -53,7 +56,7 @@ fi
 # Calculate progress percentage based on the number of completed steps
 if [ "$total_steps" -gt 0 ]; then
     progress_percentage=$((progress * 100 / total_steps))
-    print_progress "$progress_percentage"
+   # print_progress "$progress_percentage"
 #else
 #    echo "No steps executed."
 fi
