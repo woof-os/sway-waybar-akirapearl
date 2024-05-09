@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo "This is a script to automate the deployment of these dotfiles"
+clear
+echo "This is a script to install my dotfiles."
+echo "Type the letter for the corresponding software you want to install"
 echo "============================================================="
 echo "a) Starship"
 
@@ -8,10 +10,24 @@ read install
 
 if [ $install == "a" ]; then
 	echo "Installing starship..."
+	echo "============================"
 	sleep 0.5
-	#curl -sS https://starship.rs/install.sh | sh -y
-	#echo  eval "$(starship init bash)" > ~/.bashrc
-    #wget /home/$USER/Downloads/https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
-	#wget /home/$USER/Downloads/https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip	
-	echo  'eval "$(starship init bash)"' > ./test 
+	curl -sS https://starship.rs/install.sh | sh -y
+	echo  eval "$(starship init bash)" > ~/.bashrc
+	echo "============================"
+	echo "Installing required nerd fonts..."
+	echo "============================"
+	sleep 0.5
+	echo "DISCLAIMER"
+	echo "This script includes FiraCode & Jetbrains Mono Fonts."
+	echo "============================"
+	cd /home/$USER/Downloads/
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
+	wget https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip	
+	unzip FiraCode.zip && unzip JetBrainsMono-2.304.zip
+	dir=/home/$USER/.local/share/fonts/
+	cp FiraCode/* $dir && cp JetBrainsMono/* $dir
+	ls $dir
+	sleep 0.5
+
 fi

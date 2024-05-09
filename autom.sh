@@ -6,7 +6,9 @@ perform_action() {
     echo -n "Performing $action... "
 
     if [ "$action" == "verification" ]; then
-        echo "step 1"
+        #check if starship is installed
+        #check if sway files are in place
+        
     
     else
         echo "next oneeee"
