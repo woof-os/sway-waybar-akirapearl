@@ -12,8 +12,8 @@ if [ $install == "a" ]; then
 	echo "Installing starship..."
 	echo "============================"
 	sleep 0.5
-	curl -sS https://starship.rs/install.sh | sh -y
-	echo  eval "$(starship init bash)" > ~/.bashrc
+	curl -sS https://starship.rs/install.sh | yes
+	echo  'eval "$(starship init bash)"' > ~/.bashrc
 	echo "============================"
 	echo "Installing required nerd fonts..."
 	echo "============================"
@@ -22,12 +22,13 @@ if [ $install == "a" ]; then
 	echo "This script includes FiraCode & Jetbrains Mono Fonts."
 	echo "============================"
 	cd /home/$USER/Downloads/
-    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip
+	mkdir fonts
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip 
 	wget https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip	
-	unzip FiraCode.zip && unzip JetBrainsMono-2.304.zip
+	unzip FiraCode.zip fonts/ && unzip JetBrainsMono-2.304.zip fonts/
 	dir=/home/$USER/.local/share/fonts/
-	cp FiraCode/* $dir && cp JetBrainsMono/* $dir
+	cp ./fonts/FiraCode/* $dir && cp ./fonts/JetBrainsMono/* $dir
 	ls $dir
 	sleep 0.5
-
+	cp -r ./alacritty/ 
 fi
