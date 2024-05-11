@@ -29,10 +29,11 @@ Waybar
 	2. Install [starship](https://starship.rs/).
 	3. Install alacritty.
 	4. Move the alacritty folder under /home/$USER/.config/ .
-	5. Move starship.toml filr under the same directory.
+	5. Move starship.toml file under the same directory.
 
 Opening a new terminal window should show up the applied configs.
 
 Expected results:
+
 ![screenshot for expected result of my terminal customizaton](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/result_term.png) 
 
