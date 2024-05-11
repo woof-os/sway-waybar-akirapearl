@@ -12,13 +12,14 @@ Waybar
 ## Requirements
 	> Software stated above
 	* Two nerd fonts (Alacritty)
+
 	```
 	At the time of writing,  im using the following fonts:
 	- FiraCode
 	- Jetbrains Mono
 	```
 
-# How to use (alacritty & starship)
+## How to use (alacritty & starship)
 
 	1. Ensure /home/$USER/.config/ exists, otherwise, create it.
 	2. Install [starship](https://starship.rs/).
