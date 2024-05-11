@@ -4,20 +4,24 @@
 # Contents
 
 Alacritty (v.0.12.2)
+
 Starship
+
+
 --To be Completed--
+
 Sway
+
 Waybar
 
 ## Requirements
 	> Software stated above
 	* Two nerd fonts (Alacritty)
 
-	```
-	At the time of writing,  im using the following fonts:
+### Used fonts (Apr2024)
 	- FiraCode
 	- Jetbrains Mono
-	```
+
 
 ## How to use (alacritty & starship)
 
