@@ -27,8 +27,10 @@ if [ $install == "a" ]; then
 	wget https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip	
 	unzip FiraCode.zip fonts/ && unzip JetBrainsMono-2.304.zip fonts/
 	dir=/home/$USER/.local/share/fonts/
+	mkdir $dir
 	cp ./fonts/FiraCode/* $dir && cp ./fonts/JetBrainsMono/* $dir
 	ls $dir
 	sleep 0.5
-	cp -r ./alacritty/ 
+	mkdir /home/$USER/.config/alacritty/ 
+	cp -r /home/$USER/.config/alacritty/ 
 fi
