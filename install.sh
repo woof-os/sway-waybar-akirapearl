@@ -12,7 +12,7 @@ if [ $install == "a" ]; then
 	echo "Installing starship..."
 	echo "============================"
 	sleep 0.5
-	curl -sS https://starship.rs/install.sh | yes
+	curl -sS https://starship.rs/install.sh | sh
 	echo  'eval "$(starship init bash)"' > ~/.bashrc
 	echo "============================"
 	echo "Installing required nerd fonts..."
