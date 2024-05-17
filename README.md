@@ -43,6 +43,10 @@ Opening a new terminal window should show up the applied configs.
 
 ![screenshot for expected result of my terminal customizaton](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/result_term.png) 
 ![Default wallpaper](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/nikon-f2-50mm-f-1-4-flic-aurora-800-the_arctic_monkey.png)
+![fastfetch](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/fetch.png)
+![tiling terminal with browser](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/browser.png)
+
+
 
 ### Disclamer
 
