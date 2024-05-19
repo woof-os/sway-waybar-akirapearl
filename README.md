@@ -34,7 +34,11 @@ Opening a new terminal window should show up the applied configs.
 
 ## How to use/install (sway/waybar)
 
-
+	1. Ensure /home/$USER/.config/sway && /home/$USER/.config/waybar directories exist.
+	2. Move files under the sway and waybar directories included within this repo to the ones
+	at step 1.
+	3. Reload sway, by default it should be the combination of superkey (windows key) + shift + c
+	4. Enjoy! Modify! Tinker! 
 
 
 
