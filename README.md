@@ -1,3 +1,7 @@
+Note For Woof OS: only sway and waybar configs are used, modified to match the colorschemes of other Woof OS configs.
+
+---
+
 # Welcome to my dotfiles!
 -- Repository initilized on April 2024
 
