@@ -25,10 +25,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * background /home/ewe/Downloads/dotfiles/images/nikon-f2-50mm-f-1-4-flic-aurora-800-the_arctic_monkey.png fill
-output Virtual-1 {
-	mode 1440x900@60Hz
-}
+output * background /etc/woofos/generated/0002.png fill
 
 ### WINDOW BORDER
 default_border none
@@ -36,7 +33,7 @@ default_floating_border none
 #titlebar_padding 1
 gaps inner 5
 
-client.focused #BC8DBC #5D465D #F8F3F8
+client.focused #BB9AF7 #1A1B26 #C0CAF5
 #
 # Example configuration:
 #
