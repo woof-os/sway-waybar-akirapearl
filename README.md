@@ -39,7 +39,7 @@ The mouse can also be used to switch focus between windows by simply hovering ov
 - <kbd>[mod]</kbd> <kbd>W</kbd> for tabbed layout
 - <kbd>[mod]</kbd> <kbd>E</kbd> for toggle split layout
 - <kbd>[mod]</kbd> <kbd>F</kbd> for fullscreen layout
-- <kbd>[mod]</kbd> <kbd>Shift</kbd> Space toggles floating mode
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>Space</kbd> toggles floating mode
 
 ## Miscellaneous and scratchpad
 
