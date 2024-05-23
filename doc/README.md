@@ -1,4 +1,4 @@
-# Woof OS Sway Edition
+# Woof OS Sway Edition - Sway Config
 
 # Keybinds
 
