@@ -1,66 +1,65 @@
-Note For Woof OS: only sway and waybar configs are used, modified to match the colorschemes of other Woof OS configs.
+# Woof OS Sway Edition
+
+# Keybinds
+
+Woof OS Sway edition uses a tiling window manager, sway, mainly controlled using the keyboard.  
+The keybinds listed here are declared in `~/.config/sway/config`.
+
+By default, <kbd>[mod]</kbd> is the <kbd>Super</kbd>/<kbd>mod4</kbd> key, which is the <kbd>⊞ Win</kbd> key on most keyboards, and the <kbd>⌘ Command</kbd> key on Macs.
+
+## Focus navigation
+
+- <kbd>[mod]</kbd> <kbd>H</kbd> moves focus to the **left**
+- <kbd>[mod]</kbd> <kbd>L</kbd> moves focus to the **right**
+- <kbd>[mod]</kbd> <kbd>J</kbd> moves focus **down**
+- <kbd>[mod]</kbd> <kbd>K</kbd> moves focus **up**
+- <kbd>[mod]</kbd> <kbd>Space</kbd> toggles focus between the floating area and the tiling area
+
+The mouse can also be used to switch focus between windows by simply hovering over them.
+
+- <kbd>[mod]</kbd> <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd>/<kbd>5</kbd>/<kbd>6</kbd>/<kbd>7</kbd>/<kbd>8</kbd>/<kbd>9</kbd> moves focus to the workspace assigned to the ID
+
+## Window arrangement
+
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>H</kbd> moves focused window to the **left**
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>L</kbd> moves focused window to the **right**
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>J</kbd> moves focused window **down**
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>K</kbd> moves focused window **up**
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>Return</kbd> toggles between split and unsplit sides of stack
+- <kbd>[mod]</kbd> <kbd>Tab</kbd> toggles between layouts
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd>/<kbd>4</kbd>/<kbd>5</kbd>/<kbd>6</kbd>/<kbd>7</kbd>/<kbd>8</kbd>/<kbd>9</kbd> shifts focused window to the workspace assigned to the ID
+- To resize windows, enter resizing mode by pressing <kbd>[mod]</kbd> <kbd>R</kbd> and use the arrow keys or the relevant vim navigation keys to resize the window.  
+  <kbd>Return</kbd> or <kbd>Escape</kbd> exits resize mode.
+
+## Layouts
+
+- <kbd>[mod]</kbd> <kbd>R</kbd> for horizontal splitting
+- <kbd>[mod]</kbd> <kbd>V</kbd> for vertical splitting
+- <kbd>[mod]</kbd> <kbd>S</kbd> for stacking layout
+- <kbd>[mod]</kbd> <kbd>W</kbd> for tabbed layout
+- <kbd>[mod]</kbd> <kbd>E</kbd> for toggle split layout
+- <kbd>[mod]</kbd> <kbd>F</kbd> for fullscreen layout
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> Space toggles floating mode
+
+## Miscellaneous and scratchpad
+
+- <kbd>[mod]</kbd> <kbd>Shift</kbd> <kbd>-</kbd> moves focused window to the scratchpad
+- <kbd>[mod]</kbd> <kbd>-</kbd> shows the next scratchpad window or hides the focused scratchpad window
+- <kbd>[mod]</kbd> <kbd>Return</kbd> launches the terminal (alacritty)
+- <kbd>[mod]</kbd> <kbd>D</kbd> opens the Rofi run launcher
+- <kbd>[mod]</kbd> <kbd>Q</kbd> kills focused window
+- <kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>C</kbd> refreshes Sway
+- <kbd>[mod]</kbd> <kbd>CTRL</kbd> <kbd>Q</kbd> shuts down Sway
 
 ---
 
-# Welcome to my dotfiles!
--- Repository initilized on April 2024
+## Contact
 
-# Contents
+- Email: [sutharshanvithushan@gmail.com](mailto:sutharshanvithushan@gmail.com)
+- Matrix: [#woof-os:mx.lewoof.xyz](https://matrix.to/#/#woof-os:matrix.org) | [@acutewoof:mx.lewoof.xyz](https://matrix.to/#/@acutewoof:matrix.org)
+- Discord: [Woof OS](https://discord.gg/2G2yGUAXUS)
 
-Alacritty (v.0.12.2)
+## Donate
 
-Starship
-
-Sway
-
-Waybar
-
-## Requirements
-	> Software stated above
-	* Two nerd fonts (Alacritty)
-
-### Used fonts (Apr2024)
-	- FiraCode
-	- Jetbrains Mono
-
-
-## How to use/install (alacritty & starship)
-
-	1. Ensure /home/$USER/.config/ && ~/.local/share/fonts exists, otherwise, create those.
-	2. Install [starship](https://starship.rs/).
-	3. Install alacritty.
-	4. Move the alacritty folder under /home/$USER/.config/ .
-	4.5 Install fonts (move under ~/.local/share/fonts exists), download links can be found within instal.sh file.
-	5. Move starship.toml file under the same directory.
-
-Opening a new terminal window should show up the applied configs.
-
-
-## How to use/install (sway/waybar)
-
-	1. Ensure /home/$USER/.config/sway && /home/$USER/.config/waybar directories exist.
-	2. Move files under the sway and waybar directories included within this repo to the ones
-	at step 1.
-	3. Reload sway, by default it should be the combination of superkey (windows key) + shift + c
-	4. Enjoy! Modify! Tinker! 
-
-
-
-
-### Expected results:
-
-![screenshot for expected result of my terminal customizaton](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/result_term.png) 
-![Default wallpaper](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/nikon-f2-50mm-f-1-4-flic-aurora-800-the_arctic_monkey.png)
-![fastfetch](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/fetch.png)
-![tiling terminal with browser](https://raw.githubusercontent.com/Akirapearl/dotfiles/main/images/browser.png)
-
-
-
-### Disclamer
-
-I don't claim any authority or ownership over media used within this repository, nothing about it is to be commercially used, just for my personal computer and 
-sharing knowledge purposes.
-
-Used resources: 
-- https://www.reddit.com/r/analog/comments/1bg1831/nikon_f2_50mm_f14_flic_aurora_800/ - Default wallpaper.
-- https://github.com/Egosummiki/dotfiles/tree/master/waybar - OG config files for waybar (v.1 for me, first modification 17/05/2024)
+- **Monero:** 88Ftpu3ncRyLv7Z2c14b9L4MsyWscEqLBJhENxviYtmtRfidDx6G9y3Xyd8aYF8NRV2c2dF5QZiyTfHwuWLH9qmsSpskLhj
+- **BuyMeACoffee:** [acutewoof](https://buymeacoffee.com/acutewoof)
